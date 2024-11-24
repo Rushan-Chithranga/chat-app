@@ -8,6 +8,8 @@ const app = express();
 dotenv.config();
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.send("hello world!");
 });
