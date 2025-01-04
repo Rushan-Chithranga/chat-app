@@ -37,7 +37,6 @@ const useSignup = () => {
         }),
       });
       const responseData = await response.json();
-      console.log(responseData);
       if (responseData.error) {
         throw new Error(responseData.error);
       }
