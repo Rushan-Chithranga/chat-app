@@ -4,18 +4,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/bg.png");
+    url("https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
