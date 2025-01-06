@@ -13,11 +13,42 @@ function App() {
     <>
       <div className="p-4 h-screen flex items-center justify-center">
         <Routes>
-        <Route path='/' element={authUser ? <Home /> : <Navigate to={"/signin"} />} />
-				<Route path='/signin' element={authUser ? <Navigate to='/' /> : <Login />} />
-				<Route path='/signup' element={authUser ? <Navigate to='/' /> : <SignUp />} />
+          <Route
+            path="/"
+            element={authUser ? <Home /> : <Navigate to={"/signin"} />}
+          />
+          <Route
+            path="/signin"
+            element={authUser ? <Navigate to="/" /> : <Login />}
+          />
+          <Route
+            path="/signup"
+            element={authUser ? <Navigate to="/" /> : <SignUp />}
+          />
         </Routes>
-        <Toaster />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+          gutter={8}
+          containerClassName=""
+          containerStyle={{}}
+          toastOptions={{
+            className: "",
+            duration: 5000,
+            removeDelay: 1000,
+            style: {
+              background: "#363636",
+              color: "#fff",
+            },
+            success: {
+              duration: 3000,
+              iconTheme: {
+                primary: "green",
+                secondary: "black",
+              },
+            },
+          }}
+        />
       </div>
     </>
   );
