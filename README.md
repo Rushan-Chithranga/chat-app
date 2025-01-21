@@ -14,10 +14,10 @@ A real-time chat application built with React.js for the front-end and Node.js w
 ## Screenshots
 
 ![Login Page](frontend/public/login_image.png)
-*Login Page*
+_Login Page_
 
 ![Chat Page](frontend/public/chat_image.png)
-*Chat Interface*
+_Chat Interface_
 
 ## Tech Stack
 
@@ -50,16 +50,16 @@ chat-app/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chat-app.git
+git clone git@github.com:Rushan-Chithranga/chat-app.git
 cd chat-app
 ```
 
 ### Set Up the Back-end
 
-1. Navigate to the `server` directory:
+1. Navigate to the `backend` directory:
 
    ```bash
-   cd server
+   cd backend
    ```
 
 2. Install dependencies:
@@ -85,10 +85,10 @@ cd chat-app
 
 ### Set Up the Front-end
 
-1. Navigate to the `client` directory:
+1. Navigate to the `frontend` directory:
 
    ```bash
-   cd ../client
+   cd frontend
    ```
 
 2. Install dependencies:
@@ -97,13 +97,7 @@ cd chat-app
    npm install
    ```
 
-3. Create a `.env` file in the `client` directory and add your environment variables:
-
-   ```env
-   REACT_APP_API_URL=http://localhost:5000
-   ```
-
-4. Start the development server:
+3. Start the development server:
 
    ```bash
    npm start
@@ -113,6 +107,3 @@ cd chat-app
 
 - Back-end server will run on `http://localhost:8000`
 - Front-end application will run on `http://localhost:3000`
-
-
-
